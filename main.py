@@ -1,10 +1,10 @@
-from cpf_cnpj import Documeto
-from validate_docbr import CNPJ
-renan_cpf = "40860090809"
-ex_cnpj = "35379838000112"
+from datetime import datetime, timedelta
+from datasBr import DatasBr
 
-doc_cpf_1 = Documeto.cria_documento(renan_cpf)
-doc_cnpj_1 = Documeto.cria_documento(ex_cnpj)
+# datetime.datetime -: Retorna horas exatas que estamos compilando nosso código
+# datetime.timedelta
 
-print(doc_cnpj_1)
-print(doc_cpf_1)
+cadastro = DatasBr()
+print(cadastro.momento_cadastro)
+print(cadastro.mes_cadastro())
+print(cadastro.dia_semana())
