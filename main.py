@@ -1,10 +1,11 @@
 from datetime import datetime, timedelta
 from datasBr import DatasBr
 
-# datetime.datetime -: Retorna horas exatas que estamos compilando nosso código
-# datetime.timedelta
+hoje = DatasBr()
+amanha = datetime.today() + timedelta(days=30)
 
-cadastro = DatasBr()
-print(cadastro.momento_cadastro)
-print(cadastro.mes_cadastro())
-print(cadastro.dia_semana())
+print(hoje.tempo_cadastro())
+
+print(amanha)
+
+print(hoje)

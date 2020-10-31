@@ -27,6 +27,7 @@ class DocCpf:
         validador = CPF().validate(documento)
         return validador
 
+    # Mascara
     def formata_cpf(self):
         mascara = CPF().mask(self.cpf)
         return mascara
@@ -46,6 +47,7 @@ class DocCnpj:
         validador = CNPJ().validate(documento)
         return validador
 
+    # Mascara
     def formata_cnpj(self):
         mascara = CNPJ().mask(self.cnpj)
         return mascara

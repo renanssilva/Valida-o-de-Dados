@@ -16,6 +16,7 @@ class TelefonesBr:
         resposta = re.findall(padrao, telefone)
         return True if resposta else False
 
+    # Mascara
     def formata_numero(self):
         padrao = "([0-9]{2,3})?([0-9]{2})([0-9]{4,5})([0-9]{4})"
         resposta = re.search(padrao, self.numero)
