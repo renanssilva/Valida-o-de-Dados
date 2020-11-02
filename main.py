@@ -1,11 +1,7 @@
-from datetime import datetime, timedelta
-from datasBr import DatasBr
+from acesso_cep import BuscaEnderco
 
-hoje = DatasBr()
-amanha = datetime.today() + timedelta(days=30)
+cep = '28572320'
 
-print(hoje.tempo_cadastro())
+objeto_cep = BuscaEnderco(cep)
 
-print(amanha)
-
-print(hoje)
+print(objeto_cep)
